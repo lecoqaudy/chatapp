@@ -48,10 +48,10 @@
 
     <script>
       var okta = new OktaSignIn({
-        baseUrl: "https://dev-111464.oktapreview.com",
-        clientId: "0oaejf8gmll1TiDRz0h7",
+        baseUrl: "https://dev-667146.okta.com",
+        clientId: "0oa12yjxqoRzM1UXh4x6",
         authParams: {
-          issuer: "https://dev-111464.oktapreview.com/oauth2/default",
+          issuer: "https://dev-667146.okta.com/oauth2/default",
           responseType: ["token", "id_token"],
           display: "page"
         }
@@ -141,7 +141,7 @@
       // kickstart the video call.
       function loadSimpleWebRTC() {
         var script = document.createElement("script");
-        script.src = "https://simplewebrtc.com/latest-v3.js";
+        script.src = "https://cdn.jsdelivr.net/npm/simplewebrtc@3.0.2/out/simplewebrtc-with-adapter.bundle.js";
         document.head.appendChild(script);
 
         script.onload = function() {
